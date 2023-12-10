@@ -4,11 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Benjamin Crimmins</title>
     <link rel="stylesheet" href="screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel="stylesheet" />
   </head>
   <body>
-    <h1>Heading</h1>
+    <ul id="navbar">
+      <li class="dropdown">
+        <a class="dropbtn" href="javascript:void(0)">Jump To</a>
+        <div class="dropdown-content">
+          <a rel="noopener" target="_self" href="#whoami">Who Am I?</a>
+          <a rel="noopener" target="_self" href="#STARXlogo">STARX</a>
+          <a rel="noopener" target="_self" href="#internships">Internships</a>
+          <a rel="noopener" target="_self" href="#education">Education</a>
+          <a rel="noopener" target="_self" href="#whatnow">Links</a>
+        </div>
+      </li>
+      <li><p id="name">Crimmins</p></li>
+    </ul>
+
+    <div class="wholepage"> 
+      <div id="leftmargin"></div>
+      <div class="contentpage">
+        <h1 id="whoami">Who Am I?</h1>
+        <p class="intro">I'm currently a third year computer science student in the College of Engineering at Michigan State University. I'm always looking to learn new things in the world of computer science. At present I'm interested in computer graphics and how visuals are rendered on a screen. <br> 
+        <br>
+        When I'm not busy doing homework for my classes, you can find me collaborating with my teammates on the MSU STARX team (link)...and when I'm not busy with STARX you can find me playing games on my PC. I have a blog (link) I update every now and then with my favorite games and my reviews of them. <br> 
+        <br>
+        This summer I'll be returning to Rocket Mortgage for my second term as a Software Engineer Intern (link).</p>
+
+        <img id="STARXlogo" src="imgs/STARX_Black_Transparent_Logo 1.png" alt="MSU STARX Logo">
+        
+        <div id="STARXsection">
+          <div class="STARXyear">
+            <div id="STARXGroup" class="imagecap">
+              <img src="imgs/Group Photo.png" alt="MSU STARX Leadership lining up for one last team photo after competition">
+              <p class="caption">MSU STARX Leadership lining up for one last team photo after competition. Our suit malfunctioned the night before, so we weren't able to compete at full capacity. We still had a great time anyways! (2022)</p>
+            </div>
+
+            <div class="starxp">
+              <h2>Club Overview</h2>
+              <p class="center">MSU STrength Augmenting Robotic eXoskeleton (STARX) is a student-run engineering organization that aims to develop a wearable exoskeleton suit that can enhance a user's physical abilities.  STARX comprises engineering students of all backgrounds who specialize in the exo-suit's bio-mechanics, electronics, programming, and hardware. The club was founded in 2017, and is currently on it's third major iteration of the suit. The team competes at the end of every school year against similar teams around the nation, last year we won 2nd place.</p>
+            </div>
+          </div>
+
+          <div class="STARXyear">
+            <div class="starxp">
+              <h2>EHS Team Lead</h2>
+              <p class="center">After completing my first year in the club, I was elected to be the Embedded Hardware Systems team lead. In this position, I led the development of the control system that moved the actuators. To do this, we used accelerometers to calculate the angular velocity of the pilots leg, which would then be run through calculations to determine the correct output from the Arduino's to the actuators. This system seemed to work all the way up until competition week, where we decided to scrap the whole system and rethink of a way to move the actuators correctly. After many hours of development, we came to a solution that sacrificed reactivity for simplicity.</p>
+            </div>
+
+            <div id="STARXsuit" class="imagecap">
+              <img src="imgs/Suit1 1.png" alt="The suit propped on a table during competition">
+              <p class="caption">The suit propped on a table during competition. You can see that only two of the four actuators were actually used. The knee actuators were a level of complexity we weren't able to tackle in such a short amount of time (2023)</p>
+            </div>
+          </div>
+
+          <div class="STARXyear">
+            <div id="STARXObstacle" class="imagecap">
+              <img src="imgs/Obstacle 1.png" alt="A STARX member piloting the suit through the uneven tarrain obstacle">
+              <p class="caption">A STARX member piloting the suit through the uneven terrain obstacle at the 2022 competition. This was the team's first year back after COVID and we were hosting for the first time. The obstacles and safety equipment were designed a constructed by the team.</p>
+            </div>
+
+            <div class="starxp">
+              <h2>Chief Engineer (current)</h2>
+              <p class="center">After my second year, I was voted to be Chief Engineer of the team. This role oversees every sub-team and their progress, along with being the vice president of the club. I am required to have the most comprehensive knowledge on how the suit is designed, and I must approve all projects before they are put to production. So far, I've been able to simply act as vice president for the team, given our large backlog of projects to complete. However, I plan to spearhead our upper-body development once we have the freedom to do so.</p>
+            </div>
+          </div>
+        </div>
+
+        <h1 id="internships">Internships</h1>
+        <div id="internshiptitle">
+          <img src="imgs/Rocket Logo.png" alt="Rocket Companies Logo">
+          <h2 id="internshipname">Rocket Mortgage Software Engineer</h2>
+          <img src="imgs/Rocket Logo.png" alt="Rocket Companies Logo">
+        </div>
+        <p class="center" id="internshipspecs">May 2023 - August 2023 • Detroit, Michigan • Hybrid • 146 GitHub Contributions</p>
+
+        <div class="quote">
+          <p class="center">“Ben came in with no experience and has learned everything that was thrown at him. YAML, C#, PHP and engineering tooling. He independently looks for resources and makes connections between what he has learned and new information. His ability to learn from mistakes and grow each time is impressive”</p>
+          <p class="quotename">Kristy Currier (Team Leader)</p>
+        </div>
+
+        <div class="quote">
+          <p class="center">“Overall, Ben has been a great software engineering intern. He is driven, self-motivated, organized, and focused on both his short- and long-term goals. He has been a valuable asset to our team, and I highly recommend him for further opportunities, both at Rocket and elsewhere.”</p>
+          <p class="quotename">Alexis Atchison (Senior Software Engineer)</p>
+        </div>
+
+        <div class="skills">
+          <div class="skillslearned">
+            <h2>Hard Skills Learned</h2>
+            <p class="left">CICD - Using CircleCI, I assisted the team in updating pipelines and deploying packages.<br>
+            <br>
+            YAML - Much of my CICD work consisted of updating YAML files for library pipelines.<br>
+            <br>
+            Git/GitHub - I worked heavily with GitHub and Git, creating repositories and transferring large amounts of files to updated repos.<br>
+            <br>
+            PHP, Scripting, Google Teams. </p>
+          </div>
+        
+          <div class="skillslearned">
+            <h2>Soft Skills Learned</h2>
+            <p class="left">Leadership - Later into the internship, another intern joined our team. I met with her often and mentored her on the work we were doing.<br> 
+            <br>
+            Communication - I strived to work well with everyone on the team. I was eventually able to communicate with and help a few senior-level engineers with their work.<br> 
+            <br>
+            Problem Solving - Every task I was given presented a new challenge to overcome. Over time I learned how best to approach new topics and learn what I need to complete my work.</p>
+          </div>
+        </div>
+
+        <h1 id="education">Education</h1>
+        <div class="university">
+          <div class="universitytitle">
+            <h2>Michigan State University</h2>
+            <h3>Bachelor of Science, Computer Science 2025</h3>
+          </div>
+          <img id="spartanlogo" src="imgs/Spartan Logo.png" alt="MSU Spartan Logo">
+        </div>
+        <p class="intro">I am proud to call Michigan State University my home. Ever since my first night in Wilson Hall, MSU has been the perfect place for me to learn and grow as a person. As any current or previous Spartan knows... once a Spartan, always a Spartan. GO GREEN!</p>
+
+
+        <h1 id="projects">Projects</h1>
+        <p class="center">Here you can find the personal projects I am most proud of:</p>
+        <div class="projectcolumns">
+          <div class="projectrow">
+            <div class="project">
+              <p>Coming soon...</p>
+            </div>
+            <div class="project">
+              <p>Coming soon...</p>
+            </div>
+          </div>
+          <div class="projectrow">
+            <div class="project">
+              <p>Coming soon...</p>
+            </div>
+            <div class="project">
+              <p>Coming soon...</p>
+            </div>
+          </div>
+        </div>
+
+        <h1 id="whatnow">What Now?</h1>
+        <div class="contact">
+          <p class="center">Questions? Reach out!</p>
+          <a class="contactlink" href="mailto: bencrimmins8@gmail.com">bencrimmins8@gmail.com</a>
+        </div>
+        <div class="contact">
+          <p class="center">Check out my GitHub!</p>
+          <a class="contactlink" href="https://github.com/bencrim">github.com/bencrim</a>
+        </div>
+        <div class="contact">
+          <p class="center">Connect on LinkedIn!</p>
+          <a class="contactlink" href="https://www.linkedin.com/in/benjamin-crimmins/">linkedin.com/in/benjamin-crimmins/</a>
+        </div>
+        
+        <a id="Return" href="#">Return to top</a>
+      </div>
+      <div id="rightmargin"></div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

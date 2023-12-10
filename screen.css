@@ -1,1 +1,509 @@
-/* Add screen styles below */
+body {
+    margin: 0;
+}
+
+.topbar {
+	height:			80px;
+	background: 	linear-gradient(to bottom right, rgb(200, 200, 200), rgb(100, 100, 100));
+    border-bottom: #000;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.logo {
+	width:	80px;
+	height:	80px;
+	float:	left;
+}
+
+.topphrase {
+	font-family:	courier;
+	font-size:		40px;
+	color:			rgb(255, 255, 255);
+	padding-top:	35px;
+	padding-right:	40px;
+	float: 			right;
+}
+
+ul {
+    list-style-type:	none;
+	margin:				0;
+	padding:			0;
+    background-color: 	rgb(255, 255, 255);
+    font-size: 1em;
+    color: black;
+    border-bottom: 1px solid black;
+    font-family:        Roboto;
+    font-size:          24px;
+    font-style:         normal;
+    font-weight:        300;
+    display: flex;
+    justify-content: space-between;
+}
+
+#name {
+    padding: 14px 16px;
+    margin: 0;
+}
+
+li {
+    display: 	inline-block;
+}
+
+li a.active {
+	background-color: 	rgb(98, 121, 94);
+}
+
+li a, .dropbtn {
+    display:			inline-block;
+    color:				black;
+    text-align:			center;
+    padding:			14px 16px;
+    font-family:        Roboto;
+    font-size:          24px;
+    font-style:         normal;
+    font-weight:        300;
+    text-decoration:	none;
+	width:				100px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #18453B;
+    color: white;
+}
+
+.dropdown {
+    display:	inline-block;
+	position:	relative;
+}
+
+.dropdown-content {
+    display: 			none;
+    position: 			absolute;
+    background-color: 	rgb(255, 255, 255);
+    width: 				160px;
+    box-shadow: 		5px 10px 10px rgba(0,0,0,0.3);
+	z-index: 			1;
+}
+
+.dropdown-content a {
+    color: 				black;
+    padding: 			12px 16px;
+    text-decoration: 	none;
+    font-family:        Roboto;
+    font-size:          24px;
+    font-style:         normal;
+    font-weight:        300;
+    display: 			block;
+    text-align: 		left;
+	width:				128px;
+	z-index: 			1;
+}
+
+.dropdown-content a:hover {
+	background-color: 	rgb(21, 41, 25);
+}
+
+.dropdown:hover .dropdown-content {
+    display:	block;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+h1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;  
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    margin: 0;
+}
+
+h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin:0;
+}
+
+#STARXlogo {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+}
+
+#STARXsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.STARXyear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 5%;
+}
+
+#STARXGroup {
+    max-width: 50%;
+}
+
+#STARXsuit {
+    max-width: 30%;
+}
+
+#STARXObstacle {
+    max-width: 40%;
+}
+
+.imagecap {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.starxp {
+    width: 40%;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.left {
+    height: fit-content;
+    flex-shrink: 0;    
+    
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.center {
+    height: fit-content;
+    flex-shrink: 0;
+
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 10px 0;
+}
+
+.caption {
+    height: fit-content;
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.contentpage {
+    margin: 0 auto;
+    width: 75.24%;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.intro {
+    height: fit-content;
+    flex-shrink: 0;    
+    
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    margin: 30px auto;
+
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#leftmargin {
+    background-image: url(imgs/Left\ Margin.png);
+    width: 302px;
+}
+
+#rightmargin {
+    background-image: url(imgs/Right\ Margin.png);
+    width: 302px;
+}
+
+.wholepage {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#internshiptitle {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 820px;
+}
+
+#internshipspecs {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#internshipname {
+    color: #000;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.quote {
+    margin: 30px auto;
+    max-width: 1150px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.quotename {
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.skills {
+    display: flex;
+    margin: 10%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+.skillslearned {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    width: 40%;
+}
+
+.university {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.universitytitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#spartanlogo {
+    margin-left: 300px;
+    height: 150px;
+}
+
+.projectcolumns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectrow {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    background-color: #000;
+    margin: 4% 6%;
+    padding: 3.5% 9%;
+    border-radius: 25px;
+}
+
+.project p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    margin: 60px 0;
+}
+
+.contactlink {
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+#Return {
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none;
+
+    margin: 60px auto;
+}
+
+#projects {
+    margin-top: 300px;
+}
+
+@media screen and (max-width: 1635px) {
+    .center {
+        font-size: 22px;
+    }
+
+    .intro {
+        font-size: 22px;
+    }
+
+    .left {
+        font-size: 22px;
+    }
+
+    .quotename {
+        font-size: 22px;
+    }
+
+    .wholepage {
+        display: block;
+    }
+    
+    .contentpage {
+        width: 85%;
+    }
+
+    #projects {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1636px) {
+    .center {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 24px;
+    }
+
+    .left {
+        font-size: 24px;
+    }
+
+    .quotename {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .center {
+        font-size: 26px;
+    }
+
+    .intro {
+        font-size: 26px;
+    }
+
+    .left {
+        font-size: 26px;
+    }
+
+    .quotename {
+        font-size: 26px;
+    }
+
+    #education {
+        margin-top: 200px;
+    }
+
+    #internships {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (min-width: 2545px) {
+.center {
+        font-size: 28px;
+    }
+
+    .intro {
+        font-size: 28px;
+    }
+
+    .left {
+        font-size: 28px;
+    }
+
+    .quotename {
+        font-size: 28px;
+    }
+}
+
+
